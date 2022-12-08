@@ -50,20 +50,40 @@ margin-left: 20px;
     
 main{
     background-color: rgb(37, 128, 207);
-height: 500px;
+    height: 500px;
     grid-area: main;
 }
 main img{
-    height: 100%;
-    width: 100%;
+    height: 500px;
+    width: 70%;
 }
 .card-box{
     background-color: beige;
     height: 300px;
     grid-area: card-box;
 }
+.card{
+    border: 1px solid red;
+    height: 280px;
+    width: 250px;
+    margin: 10px;
+}
 footer{
     background-color:aliceblue;
     height: 200px;
     grid-area: footer;
+}
+
+@media only screen and (max-width:425px){
+    /* header */
+    ul li {
+      margin-left: 3px;
+        }
+
+    .icon input{ 
+        margin-right: 10px;
+        width: 50px;
+    }
+    /* main */
+    
 }
