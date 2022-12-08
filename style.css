@@ -1,89 +1,213 @@
-*{
+* {
     margin: 0;
     padding: 0;
     gap: 10px;
 }
-html,body{
+
+html,
+body {
     background-color: gray;
 }
 
-.container{
+.container {
     display: grid;
-    grid-template-areas: "header header header header" "main main main main" " card-box  card-box  card-box  card-box" "footer footer footer footer";
+    grid-template-areas: "header header header header" "main main main main" " card-box  card-box  card-box  card-box" "content content content content" "footer footer footer footer";
 }
 
-header{
+header {
     /* background-color: aliceblue; */
-    height :  150px;
+    height: 150px;
     grid-area: header;
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 80px;
     color: rgb(197, 197, 197);
 }
-nav{
+
+nav {
     background-color: aliceblue;
     height: 80px;
 }
+
 ul li {
-display: inline-block;
-margin-top: 24px ;
-margin-left: 20px;
+    display: inline-block;
+    margin-top: 24px;
+    margin-left: 20px;
 }
-    ul li a{
-        text-decoration: none;
-        color: grey;
-        
-    }
-    header .icon{
-        display:block;
-        float: right;
-        margin-top: -15px;
-        margin-right: 20px;
-        
-    }
-    .icon input{ 
-        margin-right: 10px;
-        width: 300px;
-    }
-    
-main{
+
+ul li a {
+    text-decoration: none;
+    color: grey;
+
+}
+
+header .icon {
+    display: block;
+    float: right;
+    margin-top: -15px;
+    margin-right: 20px;
+
+}
+
+.icon input {
+    margin-right: 10px;
+    width: 300px;
+}
+
+main {
     background-color: rgb(37, 128, 207);
     height: 500px;
     grid-area: main;
 }
-main img{
+
+main img {
     height: 500px;
     width: 70%;
 }
-.card-box{
+
+.card-box {
     background-color: beige;
-    height: 300px;
+    height: 400px;
+    width: 100%;
     grid-area: card-box;
+
 }
-.card{
+
+.card {
     border: 1px solid red;
-    height: 280px;
-    width: 250px;
-    margin: 10px;
+    height: 320px;
+    width: 290px;
+    margin: 34px 30px;
+
+    float: left;
 }
-footer{
-    background-color:aliceblue;
-    height: 200px;
+
+.card-img {
+    height: 150px;
+    width: 100%;
+}
+
+.card-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-content p {
+    text-align: center;
+    margin: 20px 5px 0px;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: black;
+    float: right;
+    margin: 15px 10px;
+    font-size: 20px;
+}
+
+.content {
+    grid-area: content;
+    background-color: antiquewhite;
+    height: 300px;
+    width: 100%;
+
+}
+
+.content-img {
+    /* background-color: blueviolet; */
+    height: 300px;
+    width: 400px;
+    float: left;
+
+}
+
+.content-img img {
+    height: 110px;
+    width: 145px;
+    margin: 20px;
+}
+
+.content-body {
+    /* background-color: cadetblue; */
+    display: inline-block;
+    height: 300px;
+    width: 1023px;
+    float: left;
+
+}
+
+.content-body h2 {
+    margin: 20px;
+}
+
+.content-body p {
+    margin: 20px;
+}
+
+footer {
+    background-color: aliceblue;
+    height: 100px;
     grid-area: footer;
 }
+.terms{
+    ""
+}
+footer p{
+    display: inline-block;
+    margin: 40px 20px;
+    float: left;
+}
+.footer-menu{
+    float: right;
+}
+.footer-menu ul {
+   margin:20px 20px ;
+}
+li{
+    margin: 10px;
+}
 
-@media only screen and (max-width:425px){
+@media only screen and (max-width:425px) {
+
     /* header */
     ul li {
-      margin-left: 3px;
-        }
+        margin-left: 3px;
+    }
 
-    .icon input{ 
+    .icon input {
         margin-right: 10px;
         width: 50px;
     }
+
     /* main */
-    
+    /* card-box */
+    .card-box {
+        height: 1600px;
+    }
+
+    /* content */
+    .content {
+        background-color: antiquewhite;
+        height: 528px;
+        width: 100%;
+
+    }
+
+    .content-img {
+        width: 430px;
+    }
+
+    .content-img img {
+        width: 168px;
+    }
+
+    .content-body {
+        background-color: cadetblue;
+        display: inline-block;
+        height: 252px;
+
+    }
+
 }
